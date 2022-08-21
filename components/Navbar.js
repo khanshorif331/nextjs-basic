@@ -6,7 +6,7 @@ const Navbar = () => {
 			</div>
 			<a>Home</a>
 			<a>About</a>
-			<a>Shorif Listing Listing</a>
+			<a>Shorif Listing</a>
 		</nav>
 	)
 }
