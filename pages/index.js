@@ -8,8 +8,8 @@ import styles from '../styles/Home.module.css'
 export default function Home() {
 	return (
 		<div>
-			<h1>Home Page</h1>
-			<p>
+			<h1 className={styles.title}>Home Page</h1>
+			<p className={styles.text}>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
 				maxime, quia cumque veniam consequatur quod nam minus itaque
 				suscipit iste. Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -20,7 +20,7 @@ export default function Home() {
 				consectetur adipisicing elit. Aut maxime, quia cumque veniam
 				consequatur quod nam minus itaque suscipit iste.
 			</p>
-			<p>
+			<p className={styles.text}>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
 				maxime, quia cumque veniam consequatur quod nam minus itaque
 				suscipit iste. Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -31,7 +31,7 @@ export default function Home() {
 				consectetur adipisicing elit. Aut maxime, quia cumque veniam
 				consequatur quod nam minus itaque suscipit iste.
 			</p>
-			<p>
+			<p className={styles.text}>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
 				maxime, quia cumque veniam consequatur quod nam minus itaque
 				suscipit iste. Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -43,7 +43,7 @@ export default function Home() {
 				consequatur quod nam minus itaque suscipit iste.
 			</p>
 			<Link href='/shorif'>
-				<a>See Shorif Listing</a>
+				<a className={styles.btn}>See Shorif Listing</a>
 			</Link>
 		</div>
 	)
