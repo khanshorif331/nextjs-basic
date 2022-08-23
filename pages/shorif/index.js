@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import styles from '../../styles/Shorif.module.css'
 
 // this function provided by nextjs to call the api
@@ -23,11 +24,11 @@ const Shorif = ({ shorif }) => {
 				<h1>This is Shorif World</h1>
 				{shorif?.map(sho => {
 					return (
-						<div className={styles.single} key={sho.id}>
-							<a>
+						<Link href={`/shorif/${sho.id}`} key={sho.id}>
+							<a className={styles.single}>
 								<h3>{sho.name}hello</h3>
 							</a>
-						</div>
+						</Link>
 					)
 				})}
 			</div>
