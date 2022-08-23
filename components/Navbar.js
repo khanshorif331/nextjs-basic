@@ -3,16 +3,16 @@ import Link from 'next/link'
 const Navbar = () => {
 	return (
 		<nav>
-			<div className='logo'>
-				<h1>Shorif List</h1>
+			<div className="logo">
+				<img src="/logo.png" />
 			</div>
-			<Link href='/'>
+			<Link href="/">
 				<a>Home</a>
 			</Link>
-			<Link href='/about'>
+			<Link href="/about">
 				<a>About</a>
 			</Link>
-			<Link href='/shorif'>
+			<Link href="/shorif">
 				<a>Shorif Listing</a>
 			</Link>
 		</nav>
