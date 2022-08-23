@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import styles from '../../styles/Shorif.module.css'
 
 // this function provided by nextjs to call the api
 export const getStaticProps = async () => {
@@ -22,7 +23,7 @@ const Shorif = ({ shorif }) => {
 				<h1>This is Shorif World</h1>
 				{shorif?.map(sho => {
 					return (
-						<div key={sho.id}>
+						<div className={styles.single} key={sho.id}>
 							<a>
 								<h3>{sho.name}hello</h3>
 							</a>
